@@ -12,46 +12,45 @@
 
 <body>
 
-    <div id="mySidenav" class="sidenav">
+    <div class="sidenav">
+        <div class="logo">
+            <img src="logo.jpeg/logo.jpg">
+        </div>
         <ul class="nav-links">
             <li>
-                <a href="#">
+                <div>
                     <i class="fa fa-user"></i>
-                    <span>Students</span>
-                </a>
-
+                    <a href="#">Students</a>
+                </div>
             </li>
             <li>
-                <a href="#" id=lesson href="#" class="active">
+                <div class="active">
                     <i class="fa fa-book"></i>
-                    <span>Lesson Plan</span>
-                </a>
-
-
-
+                    <a href="#" id=lesson href="#">Lesson Plan</a>
+                </div>
             </li>
             <li>
-                <a href="#">
+                <div>
                     <i class="fa fa-cog"></i>
-                    <span>Settings</span>
-                </a>
-
-
-
+                    <a href="#">Settings</a>
+                </div>
             </li>
         </ul>
-
     </div>
-    <section class="home-content">
-        <p> videos</p>
-        <label for="homepage"></label>
-        <input class="url" type="url" id="homepage" name="homepage" placeholder="insert url here">
-        <p>Or</p>
 
-        <div class="image-upload-wrap">
-            <input class="file-upload-input" type='file' />
-            <div class="drag-text">
-                <h3>Upload</h3>
+    <section class="home-content">
+        <div class="blank"></div>
+        <div class="home-body">
+            <p> videos</p>
+            <div class="input-content">
+                <input class="url" type="url" id="homepage" name="homepage" placeholder="insert url here">
+                <p>Or</p>
+            </div>
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' />
+                <div class="drag-text">
+                    <h3>Upload</h3>
+                </div>
             </div>
         </div>
 

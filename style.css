@@ -1,84 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+}
+
 .sidenav {
   box-shadow: 2px 0 27px 0 grey;
   height: 100%;
   width: 200px;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   background-color: white;
-  overflow-x: hidden;
+  text-align: center;
 }
-.sidenav .nav-links {
-  margin-top: 10px;
+
+.sidenav img {
+  height: 80px;
+  margin-top: 1rem;
 }
+
 .sidenav .nav-links li {
-  position: relative;
   list-style: none;
   height: 50px;
 }
-span {
-  display: block;
+
+.sidenav .nav-links li div {
+  text-decoration: none;
+  color: #818181;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.3rem;
 }
 
 .sidenav .nav-links li a {
   text-decoration: none;
   font-size: 18px;
   color: #818181;
-  display: flex;
-  transition: 0.3s;
-  align-items: center;
-  height: 100%;
-  width: 100%;
 }
 
 .sidenav .nav-links li a:hover {
   color: #f03030;
   transform: scale(1.3);
 }
-.sidenav .nav-links li a.active {
+
+.sidenav .nav-links li .active {
   color: black;
   background-color: #d3d3d3;
 }
+
 .sidenav .nav-links li i {
-  text-align: center;
   min-width: 60px;
-  font-size: 18px;
+  font-size: 20px;
 }
+
 .home-content {
-  justify-content: center;
-  display: grid;
-  padding: 1rem;
-  color: green;
+  position: relative;
+  min-height: 100vh;
+  width: calc(100% - 200px);
+  left: 220px;
+  /* justify-content: center;
+    display: grid;
+    padding: 1rem;
+    color: green; */
+}
+
+.home-content .home-body {
+  margin-top: 80px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.input-content {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.input-content p {
+  margin: 2rem 0 2rem 0;
 }
 
 .file-upload-input {
-  position: absolute;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   outline: none;
   opacity: 0;
+  text-align: center;
   cursor: pointer;
 }
-.image-upload-wrap {
-  margin-top: 20px;
+
+.home-content .image-upload-wrap {
   width: 200px;
   border: 1px solid black;
   border-radius: 5px;
-  position: relative;
   text-align: center;
   background-color: white;
   color: black;
+  margin-left: 188px;
+  padding-top: 104px;
 }
+
 .url {
   height: 40px;
-  width: 300%;
+  width: 70%;
+  text-align: center;
   border: 1px solid black;
   border-radius: 5px;
-}
-.container {
-  background-color: rgb(245, 244, 244);
-  height: 100vh;
 }
